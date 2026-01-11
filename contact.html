@@ -1,0 +1,477 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | DAOS LINK - Procurement & Supplies</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+        :root {
+
+            --primary: #003366;
+
+            --accent: #FFD700;
+
+            --light: #f4f7f6;
+
+            --dark: #1a1a1a;
+
+            --white: #ffffff;
+
+        }
+
+
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+
+
+
+        /* --- Navigation --- */
+
+        header {
+
+            background: var(--white);
+
+            padding: 1rem 5%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+        }
+
+        .company-name { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+
+        nav a { text-decoration: none; color: var(--dark); margin-left: 25px; font-weight: 600; }
+
+
+
+        /* --- Contact Layout --- */
+
+        .contact-container {
+
+            max-width: 1200px;
+
+            margin: 60px auto;
+
+            padding: 0 20px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1.5fr;
+
+            gap: 40px;
+
+        }
+
+
+
+        /* --- Contact Info Sidebar --- */
+
+        .contact-info {
+
+            background: var(--primary);
+
+            color: white;
+
+            padding: 40px;
+
+            border-radius: 15px;
+
+        }
+
+        .contact-info h2 { margin-bottom: 20px; font-size: 2rem; color: var(--accent); }
+
+        .info-item { display: flex; align-items: flex-start; margin-bottom: 25px; gap: 15px; }
+
+        .info-item i { font-size: 1.2rem; color: var(--accent); margin-top: 5px; }
+
+        .info-item h4 { font-size: 1.1rem; margin-bottom: 5px; }
+
+        .info-item p { opacity: 0.8; font-size: 0.95rem; }
+
+
+
+        /* --- Contact Form --- */
+
+        .contact-form-card {
+
+            background: var(--white);
+
+            padding: 40px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+
+        }
+
+        .contact-form-card h3 { margin-bottom: 25px; color: var(--primary); }
+
+       
+
+        .form-group { margin-bottom: 20px; }
+
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; }
+
+        .form-group input, .form-group textarea {
+
+            width: 100%;
+
+            padding: 12px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 5px;
+
+            font-size: 1rem;
+
+        }
+
+        .form-group textarea { height: 120px; resize: vertical; }
+
+
+
+        .submit-btn {
+
+            background: var(--primary);
+
+            color: white;
+
+            border: none;
+
+            padding: 15px 30px;
+
+            font-size: 1rem;
+
+            font-weight: bold;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+            width: 100%;
+
+        }
+
+        .submit-btn:hover { background: #004a94; }
+
+
+
+        /* --- Simple Map Placeholder --- */
+
+        .map-section {
+
+            padding: 0 20px 60px;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+        }
+
+        .map-placeholder {
+
+            width: 100%;
+
+            height: 300px;
+
+            background: #e0e0e0;
+
+            border-radius: 15px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #666;
+
+            font-weight: bold;
+
+            border: 2px dashed #ccc;
+
+        }
+
+
+
+        footer { background: var(--dark); color: white; padding: 20px; text-align: center; }
+
+
+
+        /* --- PHONE VIEW (Responsive Design) --- */
+
+        @media (max-width: 768px) {
+
+            header {
+
+                flex-direction: column;
+
+                padding: 1rem;
+
+                text-align: center;
+
+            }
+
+           
+
+            nav {
+
+                margin-top: 15px;
+
+                display: flex;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 10px;
+
+            }
+
+
+
+            nav a {
+
+                margin-left: 0;
+
+                font-size: 0.9rem;
+
+            }
+
+
+
+            .contact-container {
+
+                grid-template-columns: 1fr;
+
+                margin: 30px auto;
+
+            }
+
+
+
+            .contact-info, .contact-form-card {
+
+                padding: 25px;
+
+            }
+
+
+
+            .contact-info h2 {
+
+                font-size: 1.6rem;
+
+            }
+
+
+
+            .map-section {
+
+                padding-bottom: 30px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+    <div class="company-name">DAOS LINK</div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="team.html">Team</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<div class="contact-container">
+
+    <div class="contact-info">
+
+        <h2>Get in Touch</h2>
+
+        <p style="margin-bottom: 30px;">Have a procurement request or a general inquiry? Reach out to our team today.</p>
+
+
+
+        <div class="info-item">
+
+            <i class="fas fa-phone-alt"></i>
+
+            <div>
+
+                <h4>Call Us</h4>
+
+                <p>+265 980 975 557</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-item">
+
+            <i class="fas fa-envelope"></i>
+
+            <div>
+
+                <h4>Email Us</h4>
+
+                <p>daoslink@gmail.com</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-item">
+
+            <i class="fas fa-map-marker-alt"></i>
+
+            <div>
+
+                <h4>Visit Us</h4>
+
+                <p>Area 47, Gulliver<br>Lilongwe, Malawi</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+   <div class="contact-form-card">
+
+    <h3>Send a Message</h3>
+
+   
+
+    <form action="https://formspree.io/f/xojjazqq" method="POST">
+
+       
+
+        <div class="form-group">
+
+            <label>Full Name</label>
+
+            <input type="text" name="Full Name" placeholder="Enter your name" required>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label>Email Address</label>
+
+            <input type="email" name="Email" placeholder="your@email.com" required>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label>Subject</label>
+
+            <input type="text" name="Subject" placeholder="e.g. Construction Material Quote" required>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label>Your Message</label>
+
+            <textarea name="Message" placeholder="How can DAOS LINK help you today?" required></textarea>
+
+        </div>
+
+
+
+        <input type="hidden" name="_next" value="index.html">
+
+       
+
+        <input type="text" name="_gotcha" style="display:none">
+
+
+
+        <button type="submit" class="submit-btn">Send Inquiry</button>
+
+    </form>
+
+</div>
+
+</div>
+
+
+
+<section class="map-section">
+
+    <div class="map-placeholder">
+
+        <i class="fas fa-map-marked-alt" style="margin-right: 10px;"></i>
+
+        Google Maps Integration (Area 47, Gulliver)
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <p>© 2026 DAOS LINK | Reliable Trading Partners</p>
+
+</footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | DAOS LINK Leadership</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #003366;
+            --accent: #FFD700;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+
+        /* --- Navigation --- */
+        header {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo-container { display: flex; align-items: center; gap: 15px; }
+        .logo-container img { height: 40px; }
+        .company-name { font-size: 1.3rem; font-weight: 800; color: var(--primary); }
+        nav a { text-decoration: none; color: var(--dark); margin-left: 25px; font-weight: 600; }
+
+        /* --- Banner --- */
+        .team-banner {
+            background: linear-gradient(rgba(0,51,102,0.85), rgba(0,51,102,0.85)), url('images/identity/office.jpg.jpg') center/cover;
+            color: white;
+            padding: 100px 10%;
+            text-align: center;
+        }
+        .team-banner h1 { font-size: 3rem; margin-bottom: 15px; }
+
+        /* --- Team Grid --- */
+        .team-section { padding: 80px 10%; text-align: center; }
+        .team-section h2 { font-size: 2.5rem; margin-bottom: 50px; color: var(--primary); }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+        }
+
+        .member-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            position: relative;
+        }
+        
+        .member-card:hover { transform: translateY(-10px); }
+
+        .member-img-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            background: #eee;
+        }
+
+        .member-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .member-info { padding: 25px 15px; }
+        .member-info h3 { color: var(--primary); font-size: 1.25rem; margin-bottom: 5px; }
+        .member-info p { color: #64748b; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; min-height: 40px; }
+
+        .social-links { margin-top: 15px; border-top: 1px solid #f1f5f9; padding-top: 15px; }
+        .social-links a { color: var(--primary); margin: 0 12px; text-decoration: none; font-size: 1.2rem; opacity: 0.7; transition: 0.3s; }
+        .social-links a:hover { opacity: 1; color: var(--accent); }
+
+        footer { background: var(--primary); color: white; padding: 30px; text-align: center; margin-top: 50px; }
+
+        /* --- PHONE VIEW --- */
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 1.5rem 1rem; }
+            nav { margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+            nav a { margin-left: 0; font-size: 0.9rem; padding: 5px 10px; }
+            .team-banner h1 { font-size: 2.2rem; }
+            .team-grid { grid-template-columns: 1fr; gap: 30px; }
+            .member-img-container { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="images/logo.jpg" alt="DAOS LINK Logo">
+        <span class="company-name">DAOS LINK</span>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="team-banner">
+    <h1>Our Leadership</h1>
+    <p>Driving excellence in Malawi's supply chain industry with integrity and expertise.</p>
+</section>
+
+<section class="team-section">
+    <h2>Management Team</h2>
+    
+    <div class="team-grid">
+        <div class="member-card">
+            <div class="member-img-container">
+                <img src="images/team/ghanet.jpg.jpg" alt="Ghanet Hau">
+            </div>
+            <div class="member-info">
+                <h3>Ghanet Hau</h3>
+                <p>Operations & Projects Manager</p>
+                <div class="social-links">
+                    <a href="mailto:ghannetvhau@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/gcrack.hau" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="member-img-container">
+                <img src="images/team/nazil.jpg.jpg" alt="Naziel Karim">
+            </div>
+            <div class="member-info">
+                <h3>Naziel Karim</h3>
+                <p>Finance & Accounts Manager</p>
+                <div class="social-links">
+                    <a href="mailto:karimnazir2611@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/nazil.karim" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="member-img-container">
+                <img src="images/team/precious.jpg.jpg" alt="Precious Selemani">
+            </div>
+            <div class="member-info">
+                <h3>Precious Selemani</h3>
+                <p>Chief Procurement & Supply Officer</p>
+                <div class="social-links">
+                    <a href="mailto:preciousjamesselemani@daoslink.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/seleman.selemani.728123" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="member-img-container">
+                <img src="images/team/rahman.jpg.jpg" alt="Rahman Mtogolo Kamwana">
+            </div>
+            <div class="member-info">
+                <h3>Rahman M. Kamwana</h3>
+                <p>Business Development & Sourcing Officer</p>
+                <div class="social-links">
+                    <a href="mailto:rahmankmtogolo@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/mtogodfg" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 DAOS LINK | Professional Excellence in Procurement</p>
+</footer>
+
+</body>
+</html>

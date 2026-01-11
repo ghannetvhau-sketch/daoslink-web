@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | DAOS LINK - Procurement Excellence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #003366;
+            --accent: #FFD700;
+            --light: #f4f7f6;
+            --dark: #1a1a1a;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--white); color: var(--dark); line-height: 1.8; }
+
+        /* --- Navigation --- */
+        header {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .company-name { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+        nav a { text-decoration: none; color: var(--dark); margin-left: 25px; font-weight: 600; }
+
+        /* --- About Hero --- */
+        .about-hero {
+            background: linear-gradient(rgba(0,51,102,0.9), rgba(0,51,102,0.9)), url('images/identity/office.jpg.jpg') center/cover;
+            color: white;
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        /* --- Main Content --- */
+        .content-section {
+            padding: 80px 10%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .content-text h2 { color: var(--primary); font-size: 2.5rem; margin-bottom: 20px; }
+        .content-text p { margin-bottom: 20px; color: #444; }
+
+        /* --- Mission/Vision Cards --- */
+        .mission-vision {
+            background: var(--light);
+            padding: 60px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .mv-card {
+            background: var(--white);
+            padding: 40px;
+            border-left: 5px solid var(--accent);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .mv-card h3 { color: var(--primary); margin-bottom: 15px; }
+
+        /* --- Core Values --- */
+        .values-section { padding: 80px 10%; text-align: center; }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .value-item i { font-size: 2.5rem; color: var(--accent); margin-bottom: 15px; }
+        .value-item h4 { color: var(--primary); margin-bottom: 10px; }
+
+        footer { background: var(--primary); color: white; padding: 40px; text-align: center; }
+
+        /* --- PHONE VIEW (Responsive Design) --- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 1.5rem 1rem;
+            }
+
+            nav {
+                margin-top: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 0;
+                font-size: 0.9rem;
+            }
+
+            .about-hero {
+                padding: 60px 5%;
+            }
+
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+
+            .content-section {
+                grid-template-columns: 1fr; /* Stack text and image */
+                padding: 40px 5%;
+                gap: 30px;
+            }
+
+            .content-text h2 {
+                font-size: 1.8rem;
+            }
+
+            .content-image img {
+                /* Adjust the accent shadow for smaller screens so it doesn't cause horizontal scrolling */
+                box-shadow: 10px 10px 0px var(--accent) !important;
+            }
+
+            .mission-vision {
+                padding: 40px 5%;
+                grid-template-columns: 1fr;
+            }
+
+            .values-section {
+                padding: 40px 5%;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr 1fr; /* Two columns for values on mobile looks better */
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .values-grid {
+                grid-template-columns: 1fr; /* Single column for very small phones */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="company-name">DAOS LINK</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="about-hero">
+    <h1>Our Story & Commitment</h1>
+    <p>Building a bridge between global markets and Malawian excellence.</p>
+</section>
+
+<section class="content-section">
+    <div class="content-text">
+        <h2>Who We Are</h2>
+        <p>Founded and based in <strong>Lilongwe, Malawi</strong>, DAOS LINK is a premier partner in the supply of high-quality goods and materials. We specialize in navigating the complexities of procurement to ensure our clients receive the best value without compromising on quality.</p>
+        <p>Whether it is construction materials for national infrastructure or specialized equipment for NGOs, our logistics network is designed to deliver on time, every time.</p>
+    </div>
+    <div class="content-image">
+        <img src="images/identity/meeting.jpg.jpg" alt="Strategic Meeting" style="width:100%; border-radius:15px; box-shadow: 20px 20px 0px var(--accent);">
+    </div>
+</section>
+
+<section class="mission-vision">
+    <div class="mv-card">
+        <h3>Our Mission</h3>
+        <p>To provide seamless procurement solutions through innovation, strategic sourcing, and a relentless focus on customer satisfaction.</p>
+    </div>
+    <div class="mv-card">
+        <h3>Our Vision</h3>
+        <p>To be the most trusted name in general trading and supply chain management across the SADC region by 2030.</p>
+    </div>
+</section>
+
+<section class="values-section">
+    <h2>Our Core Values</h2>
+    <div class="values-grid">
+        <div class="value-item">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Integrity</h4>
+            <p>Transparent dealings in every contract.</p>
+        </div>
+        <div class="value-item">
+            <i class="fas fa-shipping-fast"></i>
+            <h4>Efficiency</h4>
+            <p>Optimized supply chains for rapid delivery.</p>
+        </div>
+        <div class="value-item">
+            <i class="fas fa-users"></i>
+            <h4>Partnership</h4>
+            <p>We grow when our clients grow.</p>
+        </div>
+        <div class="value-item">
+            <i class="fas fa-gem"></i>
+            <h4>Quality</h4>
+            <p>Only the best materials sourced globally.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 DAOS LINK. All rights reserved.</p>
